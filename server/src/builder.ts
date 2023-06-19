@@ -16,13 +16,7 @@ export const builder = new SchemaBuilder<{
   },
 });
 
-builder.queryType({
-  fields: (t) => ({
-    hello: t.string({
-      resolve: () => "world",
-    }),
-  }),
-});
+builder.queryType({});
 
 builder.addScalarType("Date", DateResolver, {});
 
